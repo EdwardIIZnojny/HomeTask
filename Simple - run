@@ -1,0 +1,24 @@
+import java.util.Scanner; 
+
+public class UserChoise {
+    public static void main(String[] args) {
+
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter A = ");
+        int inputa = in.nextInt(); 
+        System.out.print("Enter B = ");
+        int inputb = in.nextInt();
+        System.out.print("Enter C = ");
+        int inputc = in.nextInt();
+
+        if (inputa > inputb && inputa > inputc) {
+            System.out.println(inputa);
+
+        }else if (inputb > inputa && inputb > inputc){
+            System.out.println(inputb);
+
+        }else if (inputc > inputa && inputc > inputb) {
+            System.out.println(inputc);
+        }
+    }
+}

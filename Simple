@@ -1,0 +1,19 @@
+public class Main {
+    public static void main(String[] args) {
+        int a = 7;
+        int b = 12;
+        int c = 3;
+
+        if (a < b) {
+            System.out.println("Biggest b = 12");
+
+            }else if (c < b) {
+            System.out.print("false");
+
+                }else if (c < a) {
+                System.out.print("false");
+        }
+
+
+    }
+}

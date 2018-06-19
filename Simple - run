@@ -1,7 +1,8 @@
-import java.util.Scanner; 
+import java.util.Scanner; // Загрузка сканера
 
 public class UserChoise {
     public static void main(String[] args) {
+
 
         Scanner in = new Scanner(System.in);
         System.out.print("Enter A = ");
@@ -12,13 +13,26 @@ public class UserChoise {
         int inputc = in.nextInt();
 
         if (inputa > inputb && inputa > inputc) {
-            System.out.println(inputa);
+            System.out.println("A = " + inputa);
 
         }else if (inputb > inputa && inputb > inputc){
-            System.out.println(inputb);
+            System.out.println("B = " + inputb);
 
         }else if (inputc > inputa && inputc > inputb) {
-            System.out.println(inputc);
+            System.out.println("C = " + inputc);
+
+        }else if  (inputa == inputb && inputb == inputc) {
+            System.out.println("A, B, C = " + inputa);
+
+        }else if  (inputa == inputb && inputb > inputc) {
+            System.out.println("A, B = " + inputa);
+
+        }else if  (inputa < inputb && inputb == inputc) {
+            System.out.println("B, C = " + inputb);
+
+        }else if  (inputa > inputb && inputa == inputc) {
+            System.out.println("A, C = " + inputa);
         }
+
     }
 }

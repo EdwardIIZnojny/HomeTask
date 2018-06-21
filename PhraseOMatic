@@ -1,0 +1,25 @@
+import static java.lang.Math.random;
+
+public class PhraseOMatic {
+    public static void main(String[] args) {
+
+        String[] wordListOne = {"Imperium", "Eldars", "Ta'u Empire", "Tyranids"};
+
+        String[] wordListTwo = {"Destroy", "Annihilate", "Capture", "Enslave"};
+
+        String[] wordListThree = {"Worlds", "Solar Systems", "Races", "Peoples"};
+
+        int oneLength = wordListOne.length;
+        int twoLength = wordListTwo.length;
+        int threeLength = wordListThree.length;
+
+        int rand1 = (int) (random() * oneLength);
+        int rand2 = (int) (random() * twoLength);
+        int rand3 = (int) (random() * threeLength);
+
+        String phrase = wordListOne[rand1] + " " + wordListTwo[rand2] + " " + wordListThree[rand3];
+
+        System.out.println("What we need is a " + phrase);
+    }
+}
+

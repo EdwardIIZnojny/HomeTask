@@ -1,0 +1,28 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class Guessing {
+    public static void main (String[]args){
+        Random r = new Random();
+        int a = r.nextInt( 100)+1;
+        System.out.println("Hello!");
+        System.out.println("Guess the number from 1 to 100.");
+        int b = 1;
+        System.out.println("Your number is: " );
+        do{
+            Scanner scanner = new Scanner(System.in);
+            b = Integer.valueOf(scanner.nextLine());
+            if (b < a){
+                System.out.println("Number is larger, ur number is:");
+            }
+            if (b > a){
+                System.out.println("Number is less, ur number is:");
+            }
+            if (b == a){
+                System.out.println("Wuha , you guessed! ");
+            }
+        }while (b != a);
+
+
+    }
+}
